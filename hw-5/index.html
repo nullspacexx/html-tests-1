@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Заявка на курс</title>
+    </head>
+    <body>
+        <header>
+            <h1>IT Academy</h1>
+            <p>Прием заявок на обучение</p>
+            <hr>
+        </header>
+        <main>
+            <form>
+                <ol>
+                    <li>
+                        <label for="name">Имя</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" minlength="3" maxlength="20" required>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="Введите ваш Email" required>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="major">Выберите направление</label>
+                        <br>
+                        <select id="major" name="major" required>
+                            <option value="" selected disabled>Выберите направление</option>
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                            <option value="devops">DevOps</option>
+                            <option value="dataanalytics">Data Analytics</option>
+                        </select>
+                        <br>
+                    </li>
+                    <li>
+                        <label for="about">Напишите сообщение</label>
+                        <br>
+                        <textarea id="about" name="about" placeholder="Расскажите немного о себе и своей мотивации" minlength="50" maxlength="250" required></textarea>
+                    </li>
+                </ol>
+                <button type="submit">Отправить</button>
+            </form>
+        </main>
+        <footer>
+            <p>© 2026 IT Academy. Все права защищены.</p>
+        </footer>
+    </body>
+</html>

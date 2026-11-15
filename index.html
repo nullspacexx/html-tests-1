@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Расписание</title>
+  </head>
+  <body>
+    <div>
+ <h1>Расписание кафедры астрофизики</h1>
+ <table>
+ <caption>Расписание научных и учебных занятий на неделю</caption>
+ <thead>
+   <tr>
+     <th scope="col">День недели</th>
+  <th scope="col">Время</th>
+  <th scope="col">Дисциплина</th>
+  <th scope="col">Тип занятия</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <th scope="row">Понедельник</th>
+  <td>09:00</td>
+  <td>Основы астрофизики</td>
+  <td>Лекция</td>
+   </tr>
+   <tr>
+     <th scope="row">Вторник</th>
+  <td>11:00</td>
+  <td>Космология</td>
+  <td>Семинар</td>
+   </tr>
+   <tr>
+     <th scope="row">Среда</th>
+  <td>10:00</td>
+  <td>Физика звезд</td>
+  <td>Лабораторная</td>
+   </tr>
+   <tr>
+     <th scope="row">Четверг</th>
+  <td>13:00</td>
+  <td>Черные дыры</td>
+  <td>Лекция</td>
+   </tr>
+   <tr>
+     <th scope="row">Пятница</th>
+  <td>09:00</td>
+  <td>Радиоастрономия</td>
+  <td>Практика</td>
+   </tr>
+   <tr>
+     <th scope="row">Суббота</th>
+  <td>12:00</td>
+  <td>Наблюдательная астрономия</td>
+  <td>Практика</td>
+   </tr>
+   <tr>
+     <th scope="row">Воскресенье</th>
+  <td> - </td>
+  <td>Выходной</td>
+  <td> - </td>
+   </tr>
+ </tbody>
+  </table>
+  </div>
+  <div>
+	<h2>Запись на дополнительное занятие</h2>
+	<form>
+		<label for="name">Имя студента</label>
+		<br>
+		<input type="text" id="name" name="name" placeholder="Введите ваше имя" minlength="2" maxlength="20" required>
+		<br>
+		<label for="email">Электронная почта</label>
+		<br>
+		<input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+		<br>
+		<label for="class">Дисциплина</label>
+		<br>
+		<select id="class" name="class" required>
+			<option value="" selected disabled>Выберите дисциплину</option>
+			<option value="astrophysics">Основы астрофизики</option>
+			<option value="cosmology">Космология</option>
+			<option value="stellar-physics">Физика звезд</option>
+			<option value="astronomy">Наблюдательная астрономия</option>
+			<option value="radio-astronomy">Радиоастрономия</option>
+			<option value="black-holes">Физика черных дыр</option>
+			<option value="astrophysical-research">Астрофизические исследования</option>
+	  </select>
+	  <br>
+	<button type="submit">Записаться</button>
+	</form>
+  </div>
+  </body>
+</html>

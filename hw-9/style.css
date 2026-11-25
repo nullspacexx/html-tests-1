@@ -1,0 +1,72 @@
+* {
+    margin: 5px;
+    border: 0;
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: lightpink;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+        font-size: 56px;
+}
+
+nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid lightgray;
+    background-color: #D14783;
+    color: white;
+}
+
+button {
+    background-color: red;
+    color: white;
+}
+
+main {
+    background-color: beige;
+}
+
+.logo { 
+    object-fit: contain;
+    width: 15%;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.boquete {
+    border: 1px solid lightgray;
+    width: 35%;
+    border-radius: 12px;
+    background-color: white;
+    overflow-wrap: anywhere;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
+
+footer {
+    background-color: lightpink;
+}

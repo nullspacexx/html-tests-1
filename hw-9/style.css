@@ -54,6 +54,12 @@ main {
     gap: 5px;
     justify-content: center;
 }
+.catalog h2 {
+    flex-basis: 100%;
+}
+.catalog p {
+    flex-basis: 100%;    
+}
 .boquete {
     border: 1px solid lightgray;
     width: 35%;

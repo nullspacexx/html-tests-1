@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bloom Room</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+	<body>
+	    <header class="header">
+	       <div class="div">
+			 <img src="./logo.PNG" class="logo" alt="Логотип">
+		    <h1>Bloom Room</h1>
+			 </div>
+			<nav>
+			    <a href="#index">Главная</a>
+				<a href="#catalog">Каталог</a>
+				<a href="#about">О нас</a>
+				<a href="#contacts">Контакты</a>
+				<button>Заказать букет</button>
+			</nav>
+		</header>
+		<main>
+		    <section id="index" class="index">
+			    <h2>Цветы с любовью</h2>
+				<p>Красивые букеты для особенных моментов и приятных воспоминаний.</p>
+				<p>Подарите близким немного радости, нежности и весеннего настроения.</p>
+				<a href="#order">Заказать букет</a>
+			</section>
+			<section id="catalog" class="catalog">
+			    <h2>Выбери свой букет</h2>
+				<p>Мы собрали для вас красивые цветочные композиции на любой вкус и повод.</p>
+				<article id="pinkmood" class="boquete">
+				    <h3>Розовое настроение</h3>
+					<p>Нежный букет из розовых пионов, который подарит тепло и улыбку.</p>
+					<img src="./pinkmood.png" alt="букет с розовыми пионами">
+					<p><b>12 000 ₸</b></p>
+				</article>
+				<article id="redvelvet" class="boquete">
+				    <h3>Красный бархат</h3>
+					<p>Яркие красные розы — классика, которая всегда говорит о чувствах.</p>
+					<img src="./redvelvet.png" alt="букет из красных роз">
+					<p><b>15 000 ₸</b></p>
+				</article>
+				<article id="springmorning" class="boquete">
+				    <h3>Весеннее утро</h3>
+					<p>Изящные белые тюльпаны для лёгкого и светлого настроения.</p>
+					<img src="./springmorning.png" alt="букет изящных тюльпанов">
+				    <p><b>9 000 ₸</b></p>
+				</article>
+			</section>
+			<section id="about">
+			    <h2>Немного о Bloom Room</h2>
+				<p><em>Bloom Room</em> — место, где каждый букет создаётся с любовью к цветам и вниманием к деталям.</p>
+				<p>Мы верим, что цветы способны передавать эмоции, создавать настроение и делать обычные дни особенными.</p>
+			</section>
+			<section id="order">
+				<h2>Заказать букет 🌷</h2>
+				<p>Оформите заказ — мы свяжемся с вами для уточнения деталей.</p>
+				<form>
+					<label for="name">Имя:</label>
+					<input type="text" id="name" name="name" placeholder="Введите ваше имя" minlength="2" maxlength="20" required>
+					<br>
+					<label for="tel">Телефон:</label>
+					<input type="tel" id="tel" name="tel" placeholder="+7(000)000-00-00" required>
+					<br>
+					<label for="boquete">Выберете букет:</label>
+					<br>
+					<select id="boquete">
+						<option value="pinkmood">Розовое настроение</option>
+						<option value="redvelvet">Красный бархат</option>
+						<option value="springmorning">Весеннее утро</option>
+					</select>
+					<br>
+					<label for="date">Дата доставка:</label>
+					<input type="date" id="date" required>
+					<br>
+					<label for="address">Адрес доставки:</label>
+					<input type="text" id="address" placeholder="Введите ваш адрес" required>
+					<br>
+					<label for="comment">Комментарий к заказу:</label>
+					<textarea id="comment" placeholder="Введите комментарий к заказу" minlength="30" maxlength="200" required></textarea>
+				</form>
+			</section>
+		</main>
+		<footer>
+		    <div id="contacts">
+			    <p>Bloom Room © 2026</p>
+				<p>Цветы с любовью ♡</p>
+			    <p>город Семей</p>
+				<a href="https://instagram.com/bloomroom/">Instagram: @bloomroom</a>
+			</div>
+		</footer>
+	</body>
+</html>

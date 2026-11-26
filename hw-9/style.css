@@ -56,7 +56,7 @@ main {
 }
 .boquete {
     border: 1px solid lightgray;
-    width: 35%;
+    flex: 1 1 260px;
     border-radius: 12px;
     background-color: white;
     overflow-wrap: anywhere;

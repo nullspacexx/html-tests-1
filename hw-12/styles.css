@@ -8,7 +8,7 @@ button {
     background-color: rgb(255, 44, 79);
     color: white;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 @keyframes pinky {

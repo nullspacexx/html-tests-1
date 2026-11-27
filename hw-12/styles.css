@@ -1,0 +1,78 @@
+* {
+    margin: 3px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(255, 44, 79);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+@keyframes pinky {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: yellow;
+    }
+    50% {
+        border-color: orange;
+    }
+    75% {
+        border-color: green;
+    }
+    100% {
+        border-color: blue;
+    }
+}
+
+form {
+    padding: 17px;
+    border: 10px solid lightgray;
+    border-radius: 12px;
+    width: 50%;
+    animation: pinky 6s linear infinite;
+}
+
+button:hover:not(:disabled) {
+    background-color: rgb(145, 2, 97);
+}
+
+button:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+input:focus-visible, button:focus-visible:not(:disabled) {
+    outline: 5px solid green;
+    outline-offset: 3px;
+}
+
+@keyframes html {
+    0% {
+        content: '';
+    }
+    25% {
+        content: 'H';
+    }
+    55% {
+        content: 'HT';
+    }
+    75% {
+        content: 'HTM';
+    }
+    100% {
+        content: 'HTML';
+    }
+}
+h2::after {
+    content: '';
+    animation: html 6s infinite;
+}
